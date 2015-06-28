@@ -64,11 +64,11 @@ function UserController () {};
 
 // Methods Grammar Examples
 function getList() {}
-function setName('Alejandro') {}
-function addItem() {}
-function updateItem() {}
-function removeItem() {}
-function parseResponse() {}
-function normalizeItem() {}
+function setName(name) {}
+function addItem(item) {}
+function updateItem(item, data) {}
+function removeItem(id) {}
+function parseResponse(response) {}
+function normalizeItem(item) {}
 function fetchList() {}
 ```
