@@ -72,3 +72,36 @@ function parseResponse(response) {}
 function normalizeItem(item) {}
 function fetchList() {}
 ```
+
+## Strings
+* Use single quotes for strings
+
+```javascript
+// Single quotes
+var title = 'Les Miserables';
+
+// concatenation 
+var full_name = self.name + ' ' + self.lastname;
+```
+* If you have a string longer than 60 characters use the following patterns.
+
+```javascript
+// Parentheses pattern
+var wikipedia = (
+  'Wikipedia receives between 25,000 and 60,000 page '        + 
+  'requests per second, depending on time of day.[245] Page ' + 
+  'requests are first passed to a front-end layer of Squid'   +
+  'requests per second, depending on time of day.[245] Page ' +
+  'hey yeah'
+);
+
+// Array pattern
+var wikipedia = [
+  'Wikipedia receives between 25,000 and 60,000 page '        ,
+  'requests per second, depending on time of day.[245] Page ' , 
+  'requests are first passed to a front-end layer of Squid'   ,
+  'requests per second, depending on time of day.[245] Page ' ,
+  'hey yeah'
+].join('');
+```
+
