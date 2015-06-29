@@ -55,8 +55,13 @@ var object                    = {};         // {Object}
 var array                     = [];         // {Array}
 
 // DOM References
-var container_HTMLDivElement    = $('#id');     // {Object:HTMLDivElement}
-var list_HTMLUlElement          = $('<ul>');    // {Object:HTMLUlElement}
+var container_HTMLDiv    = document.getElementById('container');     // {Object:HTMLDiv}
+var list_HTMLUl          = document.getElementById('list');          // {Object:HTMLUl}
+
+// JQuery Objects
+var $carousel           = $('#carousel');
+var $sidebar            = $('#sidebar');
+var $list               = $('#list');
 
 // Classes / Modules
 var UserController;
