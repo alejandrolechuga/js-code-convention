@@ -7,13 +7,10 @@
 // String
 var name        = 'Alejandro';
 var lastname    = 'Lechuga';
-
 // Number
 var age         = 29;
-
 // Boolean
 var isAlive     = true;
-
 // Null
 var SSN         = null;
 
@@ -87,6 +84,15 @@ var title = 'Les Miserables';
 
 // concatenation 
 var full_name = self.name + ' ' + self.lastname;
+
+var url = (
+    protocol    +
+    domain      +
+    path        +
+    endpoint    + 
+    parameters
+);
+ 
 ```
 * If you have a string longer than 60 characters use the following patterns.
 
@@ -110,3 +116,34 @@ var wikipedia = [
 ].join('');
 ```
 
+## Arrays
+* Array Items
+
+```javascript
+// Collection in definition
+var items = [
+  { id: 1 },
+  { id: 2 },
+  { id: 3 },
+  { id: 4 }
+];
+
+// Use method built-in .push for adding
+var items = [];
+items.push({ id: 1 });
+items.push({ id: 2 });
+items.push({ id: 3 });
+items.push({ id: 4 });
+```
+
+* Copy Array
+
+```javascript
+var copy = original.slice();
+```
+
+* Remove specific element from Array 
+
+```javascript
+array.splice(index, 1);
+```
