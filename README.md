@@ -7,10 +7,13 @@
 // String
 var name        = 'Alejandro';
 var lastname    = 'Lechuga';
+
 // Number
 var age         = 29;
+
 // Boolean
 var isAlive     = true;
+
 // Null
 var SSN         = null;
 
@@ -45,6 +48,7 @@ var molecule = {
 * Use single quotes for strings
 
 ```javascript
+
 // Single quotes
 var title = 'Les Miserables';
 
@@ -63,6 +67,7 @@ var url = (
 * If you have a string longer than 60 characters use the following patterns.
 
 ```javascript
+
 // Parentheses pattern
 var wikipedia = (
   'Wikipedia receives between 25,000 and 60,000 page '        + 
@@ -98,7 +103,7 @@ var items = [
 ];
 
 // Easier than this, if we remove the last element
-// we leave a trailing comma and take us more movements
+// we leave a trailing comma and it takes more movements
 
 var items = [
   { id: 1 }, 
@@ -112,7 +117,9 @@ var items = [
 * Pushing items is better than assignation to an index
  
 ```javascript
+
 // Use method built-in .push for adding
+
 var items = [];
 items.push({ id: 1 });
 items.push({ id: 2 });
@@ -171,13 +178,16 @@ function fetchList() {}
     Is better to have the literal `var` all over a list of variables
     
 ```javascript 
-// Better
+// Better use var , saving a `var` wont make a big difference
+
 var karma = require('karma');
 var mocks = require('mocks');
 var pizza = require('pizza');
 var juice = require('juice');
 
-// Short but hard to update , what if you want to remove juice? you have to shift the semicolon
+// Short but hard to update , what if you want to remove juice? 
+// you have to shift the semicolon
+
 var karma = require('karma'),
     mocks = require('mocks'),
     pizza = require('pizza'),
