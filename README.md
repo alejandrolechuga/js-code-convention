@@ -83,17 +83,35 @@ var wikipedia = [
 ```
 
 ## Arrays
-* Array Items
+* Array with items
 
 ```javascript
 // Collection in definition
+// It's easier to remove an item from the array
+// Specially the last element
+
 var items = [
-  { id: 1 },
-  { id: 2 },
-  { id: 3 },
+    { id: 1 }
+  , { id: 2 }
+  , { id: 3 }
+  , { id: 4 }
+];
+
+// Easier than this, if we remove the last element
+// we leave a trailing comma and take us more movements
+
+var items = [
+  { id: 1 }, 
+  { id: 2 }, 
+  { id: 3 }, 
   { id: 4 }
 ];
 
+```
+
+* Pushing items is better than assignation to an index
+ 
+```javascript
 // Use method built-in .push for adding
 var items = [];
 items.push({ id: 1 });
@@ -101,7 +119,6 @@ items.push({ id: 2 });
 items.push({ id: 3 });
 items.push({ id: 4 });
 ```
-
 * Copy Array
 
 ```javascript
