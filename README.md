@@ -40,40 +40,6 @@ var molecule = {
   ]
 };
 ```
-## Naming Convention
-```javascript
-
-// Common
-var enable_functionality      = true;       // {Boolean}
-var enable_superpower         = false;      // {Boolean}
-var computer_status           = 'running';  // {String}
-var number_rows               = 15;         // {Number}
-var object                    = {};         // {Object}
-var array                     = [];         // {Array}
-
-// DOM References
-var container_HTMLDiv    = document.getElementById('container');     // {Object:HTMLDiv}
-var list_HTMLUl          = document.getElementById('list');          // {Object:HTMLUl}
-
-// JQuery Objects
-var $carousel           = $('#carousel');
-var $sidebar            = $('#sidebar');
-var $list               = $('#list');
-
-// Classes / Modules
-var UserController;
-function UserController () {};
-
-// Methods Grammar Examples
-function getList() {}
-function setName(name) {}
-function addItem(item) {}
-function updateItem(item, data) {}
-function removeItem(id) {}
-function parseResponse(response) {}
-function normalizeItem(item) {}
-function fetchList() {}
-```
 
 ## Strings
 * Use single quotes for strings
@@ -146,4 +112,58 @@ var copy = original.slice();
 
 ```javascript
 array.splice(index, 1);
+```
+
+## Naming Convention
+* Naming
+
+```javascript
+
+// Common
+var enable_functionality      = true;       // {Boolean}
+var enable_superpower         = false;      // {Boolean}
+var computer_status           = 'running';  // {String}
+var number_rows               = 15;         // {Number}
+var object                    = {};         // {Object}
+var array                     = [];         // {Array}
+
+// DOM References
+var container_HTMLDiv    = document.getElementById('container');     // {Object:HTMLDiv}
+var list_HTMLUl          = document.getElementById('list');          // {Object:HTMLUl}
+
+// JQuery Objects
+var $carousel           = $('#carousel');
+var $sidebar            = $('#sidebar');
+var $list               = $('#list');
+
+// Classes / Modules
+var UserController;
+function UserController () {};
+
+// Methods Grammar Examples
+function getList() {}
+function setName(name) {}
+function addItem(item) {}
+function updateItem(item, data) {}
+function removeItem(id) {}
+function parseResponse(response) {}
+function normalizeItem(item) {}
+function fetchList() {}
+```
+* **Declaration**
+    Is better to have the literal `var` all over a list of variables
+    
+```javascript 
+// Better
+var karma = require('karma');
+var mocks = require('mocks');
+var pizza = require('pizza');
+var juice = require('juice');
+
+// Short but hard to update , what if you want to remove juice? you have to shift the semicolon
+var karma = require('karma'),
+    mocks = require('mocks'),
+    pizza = require('pizza'),
+    juice = require('juice');
+
 ```
