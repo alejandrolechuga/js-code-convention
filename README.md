@@ -137,6 +137,41 @@ var copy = original.slice();
 ```javascript
 array.splice(index, 1);
 ```
+## Functions
+
+```javascript
+// Function Declaration
+function test() {
+  // do something
+}
+
+// Anonymous Function Expression
+var test = function () {
+  // do something
+};
+
+// Named Function Expression
+//  * This helps tracing functions
+var test = function test() {
+  // do something
+};
+
+// Inmidietely Immediately Function Expression (IIFE)
+// * Usually used to prevent access from global scope
+(function(){
+  // do something
+}());
+
+// Another Valid way 
+(functon(){})();
+
+// Avoid using unary operators for this
++function(){  }();
+!function(){  }();
+~function(){  }();
+-function(){  }();
+
+```
 
 ## Naming Convention
 * Naming
