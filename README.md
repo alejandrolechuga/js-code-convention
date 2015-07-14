@@ -137,6 +137,17 @@ var copy = original.slice();
 ```javascript
 array.splice(index, 1);
 ```
+## Objects 
+
+```javascript
+// use literal 
+var object = {};
+
+// avoid this
+var object = new Object();
+
+```
+
 ## Functions
 
 ```javascript
@@ -208,6 +219,7 @@ function removeItem(id) {}
 function parseResponse(response) {}
 function normalizeItem(item) {}
 function fetchList() {}
+function bindPerson() {}
 ```
 * **Declaration**
     Is better to have the literal `var` all over a list of variables
